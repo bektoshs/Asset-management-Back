@@ -95,6 +95,7 @@ class Device(models.Model):
     os = models.CharField(max_length=100, null=True, blank=True)
     antivirus = models.BooleanField(default=False)
     dlp_installed = models.BooleanField(default=False)
+    usb_access = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
